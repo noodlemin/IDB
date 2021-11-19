@@ -1,0 +1,1 @@
+SELECT country as "country code", count(ocust) as "total orders" FROM orders, customers WHERE custid=ocust AND odate > '20161231' AND odate < '20210101' GROUP BY country;
