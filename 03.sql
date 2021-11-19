@@ -1,0 +1,1 @@
+SELECT custid, cname, MAX(odate) FROM customers, orders WHERE ocust=custid GROUP BY custid ORDER BY custid;
