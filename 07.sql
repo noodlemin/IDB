@@ -1,1 +1,0 @@
-SELECT pcode AS "product code", price AS "product price" FROM (SELECT details.pcode, avg(qty), price FROM details JOIN products ON details.pcode=products.pcode GROUP BY details.pcode, price ORDER BY details.pcode) as t WHERE avg>=3;
